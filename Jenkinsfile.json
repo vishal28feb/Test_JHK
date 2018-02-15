@@ -8,7 +8,7 @@
     "hostname": "Test_JHK.io"
   },
   "container_repo": {
-    "host": "hub.docker.com",
+    "host": "index.docker.io",
     "master_acct": "svishal",
     "alt_acct": "svishal",
     "jenkins_creds_id": "docker-hub-credentials",
