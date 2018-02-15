@@ -70,19 +70,15 @@ volumes:[
         }
 
         // build and publish container
-        //pipeline.containerBuildPub(
-          //  dockerfile: config.container_repo.dockerfile,
-            //host      : config.container_repo.host,
-            //acct      : acct,
-         //   repo      : config.container_repo.repo,
-         //   tags      : image_tags_list,
-         //   auth_id   : config.container_repo.jenkins_creds_id,
-         //   image_scanning: config.container_repo.image_scanning
-        //)
-
-        sh "docker build -t svishal/test_jhk config.container_repo.dockerfile"
-
-        sh "docker push svishal/test_jhk"
+        pipeline.containerBuildPub(
+            dockerfile: config.container_repo.dockerfile,
+            host      : config.container_repo.host,
+            acct      : acct,
+            repo      : config.container_repo.repo,
+            tags      : image_tags_list,
+            auth_id   : config.container_repo.jenkins_creds_id,
+            image_scanning: config.container_repo.image_scanning
+        )
       }
 
     }
