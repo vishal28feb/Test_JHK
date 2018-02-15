@@ -3,18 +3,18 @@
 # helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
 
 Master:
-  ImageTag: "2.74"
+  ImageTag: "lts"
   Memory: "512Mi"
   HostName: test.jenkins.com
   ServiceType: NodePort
   InstallPlugins:
-      - kubernetes:0.12
+      - kubernetes:1.2
       - workflow-aggregator:2.5
       - credentials-binding:1.13
-      - git:3.5.1
+      - git:3.6.4
       - pipeline-github-lib:1.0
       - ghprb:1.39.0
-      - blueocean:1.1.7
+      - blueocean:1.4.1
 
   ScriptApproval:
     - "method groovy.json.JsonSlurperClassic parseText java.lang.String"

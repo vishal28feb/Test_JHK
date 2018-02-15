@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "Test_JHK",
+    "replicas": "2",
+    "cpu": "10m",
+    "memory": "128Mi",
+    "test": true,
+    "hostname": "Test_JHK.io"
+  },
+  "container_repo": {
+    "host": "nodeweb.io",
+    "master_acct": "svishal",
+    "alt_acct": "svishal",
+    "jenkins_creds_id": "docker-hub-credentials",
+    "repo": "Test_JHK",
+    "dockeremail": ".",
+    "dockerfile": "./",
+    "image_scanning": false
+  },
+  "pipeline": {
+      "enabled": true,
+      "debug": false,
+      "library": {
+        "branch": "dev"
+      }
+  }
+}
