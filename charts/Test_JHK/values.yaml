@@ -7,7 +7,7 @@ serviceType: NodePort
 servicePort: 80
 containerPort: 8080
 component: "Test_JHK"
-replicas: 3
+replicas: 2
 image: "nodeweb.io/svishal/Test_JHK"
 imageTag: "latest"
 imagePullPolicy: "Always"
