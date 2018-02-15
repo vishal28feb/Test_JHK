@@ -12,7 +12,7 @@
     "master_acct": "svishal",
     "alt_acct": "svishal",
     "jenkins_creds_id": "docker-hub-credentials",
-    "repo": "Test_JHK",
+    "repo": "test_jhk",
     "dockeremail": ".",
     "dockerfile": "./",
     "image_scanning": false
