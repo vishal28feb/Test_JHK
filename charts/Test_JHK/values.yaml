@@ -8,7 +8,7 @@ servicePort: 80
 containerPort: 8080
 component: "Test_JHK"
 replicas: 2
-image: "docker.io/svishal/test_jhk"
+image: "index.docker.io/svishal/test_jhk"
 imageTag: "latest"
 imagePullPolicy: "Always"
 ## If you have a private registry you specify a secret to use
