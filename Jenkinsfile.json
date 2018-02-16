@@ -1,11 +1,11 @@
 {
   "app": {
-    "name": "Test_JHK",
+    "name": "test_jhk",
     "replicas": "2",
     "cpu": "10m",
     "memory": "128Mi",
     "test": true,
-    "hostname": "Test_JHK.io"
+    "hostname": "test_jhk.io"
   },
   "container_repo": {
     "host": "index.docker.io",

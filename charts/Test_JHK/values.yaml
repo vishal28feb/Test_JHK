@@ -6,7 +6,7 @@
 serviceType: NodePort
 servicePort: 80
 containerPort: 8080
-component: "Test_JHK"
+component: "test_jhk"
 replicas: 2
 image: "index.docker.io/svishal/test_jhk"
 imageTag: "latest"
@@ -18,7 +18,7 @@ memory: "128Mi"
 ## Ingress settings
 ingress:
   enabled: true
-  hostname: Test_JHK.io
+  hostname: test_jhk.io
   annotations:
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "true"
