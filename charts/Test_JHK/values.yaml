@@ -6,7 +6,7 @@
 serviceType: NodePort
 servicePort: 80
 containerPort: 8080
-component: "test_jhk"
+component: "test-jhk"
 replicas: 2
 image: "index.docker.io/svishal/test_jhk"
 imageTag: "latest"
