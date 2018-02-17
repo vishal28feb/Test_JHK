@@ -19,7 +19,7 @@ volumes:[
   node ('jenkins-pipeline') {
 
     def pwd = pwd()
-    def chart_dir = "${pwd}/charts/Test_JHK"
+    def chart_dir = "${pwd}/charts/test-jhk"
 
     checkout scm
 
