@@ -8,7 +8,7 @@ const PORT = 8080;
 // App
 const app = express();
 app.get('/', function (req, res) {
-  res.send('Hello vishal, this is your 1st node Application to deploy on K* cluster using HELM !!\n');
+  res.send('Hello vishal, this is your 1st node Application to deploy on K8 cluster using HELM !!\n');
 });
 
 app.listen(PORT);
