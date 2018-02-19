@@ -4,7 +4,7 @@
 # name: value
 
 serviceType: NodePort
-servicePort: 80
+servicePort: 8080
 containerPort: 8080
 component: "test-jhk"
 replicas: 2
