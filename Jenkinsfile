@@ -93,13 +93,11 @@ volumes:[
             name          : config.app.name,
             namespace     : config.app.name,
             chart_dir     : chart_dir,
-            set           : [
-              "imageTag": image_tags_list.get(0),
-              "replicas": config.app.replicas,
-              "cpu": config.app.cpu,
-              "memory": config.app.memory,
-              "ingress.hostname": config.app.hostname,
-            ]
+            imageTag: image_tags_list.get(0),
+            replicas: config.app.replicas,
+            cpu: config.app.cpu,
+            memory: config.app.memory,
+            ingress.hostname: config.app.hostname
           )
           
           //  Run helm tests
