@@ -88,13 +88,14 @@ volumes:[
       stage ('deploy to k8s') {
         container('helm') {
           // Deploy using Helm chart
-          print "Image tag list is : ${image_tags_list}"
+          def imgTag = image_tags_list.get(0)
+          print "Image tag list is : ${imgTag}"
           pipeline.helmDeploy(
             dry_run       : false,
             name          : config.app.name,
             namespace     : config.app.name,
             chart_dir     : chart_dir,
-            version_tag: ${image_tags_list.get(0)},
+            version_tag: imgTag,
             replicas: config.app.replicas,
             cpu: config.app.cpu,
             memory: config.app.memory,
