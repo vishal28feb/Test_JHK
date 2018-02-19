@@ -97,7 +97,7 @@ volumes:[
             replicas: config.app.replicas,
             cpu: config.app.cpu,
             memory: config.app.memory,
-            ingress.hostname: config.app.hostname
+            hostname: config.app.hostname
           )
           
           //  Run helm tests
