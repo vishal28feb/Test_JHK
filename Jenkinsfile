@@ -94,7 +94,7 @@ volumes:[
             name          : config.app.name,
             namespace     : config.app.name,
             chart_dir     : chart_dir,
-            imageTag: "latest",
+            version_tag: ${image_tags_list.get(0)},
             replicas: config.app.replicas,
             cpu: config.app.cpu,
             memory: config.app.memory,
